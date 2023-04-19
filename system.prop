@@ -6,6 +6,7 @@ ro.sys.usb.storage.type=mtp
 
 # Crypto
 ro.crypto.volume.filenames_mode=aes-256-cts
+fbe.metadata.wrappedkey=true
 
 # Timezone
 persist.sys.timezone=Africa/Nigeria
