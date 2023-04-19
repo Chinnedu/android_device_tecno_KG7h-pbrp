@@ -18,6 +18,15 @@ $(call inherit-product, device/tecno/KG7h/device.mk)
 # Inherit some common twrp stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root)
+
+# Extra required packages
+PRODUCT_PACKAGES += \
+    fastbootd \
+    android.hardware.fastboot@1.0-impl-mock \
+    android.hardware.fastboot@1.0-impl-mock.recovery \
+    libion.recovery
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := KG7h
 PRODUCT_NAME := twrp_KG7h
