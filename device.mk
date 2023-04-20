@@ -23,11 +23,6 @@ TW_INCLUDE_FASTBOOTD := true
 PRODUCT_TARGET_VNDK_VERSION := 30
 PRODUCT_SHIPPING_API_LEVEL := 30
 
-# Boot control HAL
-PRODUCT_PACKAGES += \
-    android.hardware.boot@1.0-impl \
-    android.hardware.boot@1.0-service
-
 PRODUCT_PACKAGES += \
     bootctrl.mt6765
 
