@@ -147,7 +147,12 @@ TW_HAS_MTP := true
 TW_DEVICE_VERSION := build by Chinedu 09039121780
 
 # Language
-TW_DEFAULT_LANGUAGE := "ENG"
+TW_DEFAULT_LANGUAGE := "EN"
+
+# PBRP specific build flags
+PB_TORCH_PATH := "/sys/class/leds/led:torch_0"
+PB_DISABLE_DEFAULT_DM_VERITY := true
+PB_DISABLE_DEFAULT_TREBLE_COMP := true
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
@@ -160,8 +165,8 @@ TARGET_USES_LOGD := true
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
-# haptics
-TW_SUPPORT_INPUT_1_2_HAPTICS := true
+# Vibrator
+TW_SUPPORT_INPUT_AIDL_HAPTICS := true
 
 # Tool
 TW_INCLUDE_RESETPROP := true
