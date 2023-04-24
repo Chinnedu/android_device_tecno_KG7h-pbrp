@@ -17,9 +17,6 @@ $(call inherit-product, vendor/pb/config/common.mk)
 # Inherit device configuration
 $(call inherit-product, device/tecno/KG7h/device.mk)
 
-# Inherit from the common Open Source product configuration
-$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
-
 # Extra required packages
 PRODUCT_PACKAGES += \
     fastbootd \
