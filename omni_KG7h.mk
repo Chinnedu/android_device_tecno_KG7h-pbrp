@@ -15,8 +15,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Inherit from KG7h device
 $(call inherit-product, device/tecno/KG7h/device.mk)
 
-# Inherit some common twrp stuff.
-$(call inherit-product, vendor/twrp/config/common.mk)
+# Inherit some common omni stuff.
+$(call inherit-product, vendor/pb/config/common.mk)
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root)
 
@@ -29,7 +29,7 @@ PRODUCT_PACKAGES += \
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := KG7h
-PRODUCT_NAME := twrp_KG7h
+PRODUCT_NAME := omni_KG7h
 PRODUCT_BRAND := TECNO
 PRODUCT_MODEL := TECNO KG7h
 PRODUCT_MANUFACTURER := tecno
