@@ -11,17 +11,11 @@ $(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/embedded.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-# Inherit from the common Open Source product configuration
-$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
-
-# Inherit some common TWRP stuff.
+# Inherit from our custom product configuration
 $(call inherit-product, vendor/pb/config/common.mk)
 
-# Inherit from KG7h device
+# Inherit device configuration
 $(call inherit-product, device/tecno/KG7h/device.mk)
-
-# Inherit some common twrp stuff.
-$(call inherit-product, vendor/pb/config/common.mk)
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root)
 
