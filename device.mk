@@ -19,6 +19,9 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Fastbootd
 TW_INCLUDE_FASTBOOTD := true
 
+# Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
+
 # API
 PRODUCT_TARGET_VNDK_VERSION := 30
 PRODUCT_SHIPPING_API_LEVEL := 30
