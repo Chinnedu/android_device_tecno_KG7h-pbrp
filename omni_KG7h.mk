@@ -8,12 +8,16 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/embedded.mk)
+$(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-# Inherit from our custom product configuration
-$(call inherit-product, vendor/pb/config/common.mk)
-
-# Inherit device configuration
+# Inherit from KG7h device
 $(call inherit-product, device/tecno/KG7h/device.mk)
+
+# Inherit some common twrp stuff.
+$(call inherit-product, vendor/pb/config/common.mk)
+$(call inherit-product, vendor/pb/config/gsm.mk)
 
 # Extra required packages
 PRODUCT_PACKAGES += \
