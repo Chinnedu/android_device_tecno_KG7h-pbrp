@@ -17,7 +17,14 @@ AB_OTA_POSTINSTALL_CONFIG += \
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Fastbootd
-TW_INCLUDE_FASTBOOTD := true
+PRODUCT_PACKAGES += \
+    android.hardware.fastboot@1.0-impl-mock \
+    android.hardware.fastboot@1.0-impl-mock.recovery
+    fastbootd
+
+PRODUCT_PACKAGES += \
+    mtk_decrypt \
+    mtk_decrypt_fbe
 
 # API
 PRODUCT_TARGET_VNDK_VERSION := 30
