@@ -15,7 +15,7 @@ $(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Inherit from KG7h device
 $(call inherit-product, device/tecno/KG7h/device.mk)
 
-# Inherit some common twrp stuff.
+# Inherit from our custom product configuration
 $(call inherit-product, vendor/pb/config/common.mk)
 $(call inherit-product, vendor/pb/config/gsm.mk)
 
