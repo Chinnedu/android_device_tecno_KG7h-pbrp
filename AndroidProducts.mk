@@ -9,6 +9,4 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/omni_KG7h.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_KG7h-user \
-    omni_KG7h-userdebug \
     omni_KG7h-eng
