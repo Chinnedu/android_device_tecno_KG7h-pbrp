@@ -145,14 +145,9 @@ TW_DEFAULT_BRIGHTNESS := 200
 TW_EXTRA_LANGUAGES := true
 TW_HAS_MTP := true
 TW_DEVICE_VERSION := build by Chinedu 09039121780
-
+TW_INCLUDE_FASTBOOTD_MODE := true
 # Language
 TW_DEFAULT_LANGUAGE := "EN"
-
-# PBRP specific build flags
-PB_TORCH_PATH := "/sys/class/leds/led:torch_0"
-PB_DISABLE_DEFAULT_DM_VERITY := true
-PB_DISABLE_DEFAULT_TREBLE_COMP := true
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
