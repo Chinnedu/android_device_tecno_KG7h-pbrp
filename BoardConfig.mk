@@ -165,8 +165,6 @@ PB_TORCH_MAX_BRIGHTNESS := 1
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
-
-
 # Vibrator
 TW_SUPPORT_INPUT_AIDL_HAPTICS := true
 
