@@ -15,7 +15,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Inherit from KG7h device
 $(call inherit-product, device/tecno/KG7h/device.mk)
 
-# Inherit some common twrp stuff.
+# Inherit some common TWRP stuff.
 $(call inherit-product, vendor/pb/config/common.mk)
 
 # Device identifier. This must come after all inclusions
