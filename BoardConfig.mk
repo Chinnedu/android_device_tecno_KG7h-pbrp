@@ -147,9 +147,6 @@ TW_EXTRA_LANGUAGES := true
 TW_HAS_MTP := true
 TW_DEVICE_VERSION := build by Chinedu 09039121780
 
-
-
-
 # Debug
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
