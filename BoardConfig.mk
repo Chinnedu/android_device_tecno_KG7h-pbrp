@@ -168,9 +168,7 @@ PB_TORCH_MAX_BRIGHTNESS := 1
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
-# File systems
-TARGET_USERIMAGES_USE_EXT4 := true
-TARGET_USERIMAGES_USE_F2FS := true
+
 
 # Vibrator
 TW_SUPPORT_INPUT_AIDL_HAPTICS := true
