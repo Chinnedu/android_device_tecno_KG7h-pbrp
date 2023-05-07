@@ -151,16 +151,16 @@ TW_DEVICE_VERSION := build by Chinedu 09039121780
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 
-# pbrp flags
-PB_GO := TRUE
+# fox flags
+FOX_GO := TRUE
 
 # PBRP specific build flags
 PB_DISABLE_DEFAULT_TREBLE_COMP := true 
 PB_DISABLE_DEFAULT_DM_VERITY := true
 
-# PB Torch
-PB_TORCH_PATH := "/sys/devices/virtual/torch/torch/torch_level"
-PB_TORCH_MAX_BRIGHTNESS := 1
+# FOX Torch
+FOX_TORCH_PATH := "/sys/devices/virtual/torch/torch/torch_level"
+FOX_TORCH_MAX_BRIGHTNESS := 1
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
